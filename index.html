@@ -6,8 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
   <style>
 
@@ -15,6 +25,17 @@
       font-family: 'Montserrat', sans-serif;
     }
 
+    .orange {
+      color: rgb(241, 196, 15);
+    }
+
+    .midBlue {
+      color: rgb(44, 62, 80);
+    }
+
+    h2 {
+      font-size: 50px;
+    }
     /* Remove the navbar's default rounded borders and increase the bottom margin */
     .navbar {
       margin-bottom: 50px;
@@ -24,8 +45,9 @@
     /* Remove the jumbotron's default bottom margin */
      .jumbotron {
       margin-bottom: 40px;
-      background-color: #3498db;
+      background-color: rgb(44, 62, 80);
       color: white;
+      border-bottom: 20px solid rgb(241, 196, 15);
 
     }
 
@@ -35,18 +57,25 @@
 
     .teamContainer {
       border: 1px solid #eee;
-      height: 250px;
-      width: 350px;
-      padding: 50px 90px 60px 101px;
+      /*padding: 50px 90px 60px 101px;*/
       float: left;
+    	height: 300px;
+
     }
 
     .teamContainer:hover {
       border: 1px solid #000;
     }
 
-    .teamContainer img {
-      width: 150px;
+		.teamContainer img {
+	    width: 55%;
+	    margin: 20% 20%;
+		}
+
+    .teamLogo {
+    width: 300px;
+    height: 275px;
+    float: left;
     }
 
     .teamName {
@@ -62,55 +91,57 @@
 </head>
 <body>
 
-<div class="jumbotron">
+<div class="animated bounceInDown jumbotron">
   <div class="container text-center">
-    <h1>NFL PICKER</h1>
+    <h1>NFL <span class="orange">PICKER</span></h1>
     <p></p>
   </div>
 </div>
 
-<div class="container">
-  <h2>Thursday Games</h2>
+<div class="animated bounceInUp container">
+  <h3>Thursday Games</h3>
+  <hr>
   <div class="row">
     <div class="col-sm-4">
       <a class="teamContainer">
-        <div class="teamLogo"><img src="nfl-logo/arizona_cardinals_logo.jpg" class="img-responsive" alt="Image"></div>
+        <div class="teamLogo"><img src="nfl-logos/arizona_cardinals_logo.jpg" class="img-responsive" alt="Image"></div>
         <div class="teamName text-center">Print Team Name</div>
       </a>
     </div>
     <div class="col-sm-4">
       <div class="text-center middleText">
-        <h2>VS</h2>
+        <h2 class="midBlue">VS</h2>
       </div>
     </div>
     <div class="col-sm-4">
       <a class="teamContainer">
-        <div class="teamLogo"><img src="nfl-logo/new_york_giants_logo.jpg" class="img-responsive"  alt="Image"></div>
+        <div class="teamLogo"><img src="nfl-logos/new_york_giants_logo.jpg" class="img-responsive"  alt="Image"></div>
         <div class="teamName text-center">Print Team Name</div>
       </a>
     </div>
   </div>
 </div><br>
 
-<div class="container">
-  <h2>Sunday Games</h2>
+<div class="animated bounceInUp container">
+  <h3>Sunday Games</h3>
+  <hr>
   <div class="row">
     <div class="col-sm-4">
       <a class="teamContainer">
-        <div class="teamLogo"><img src="nfl-logo/new_orleans_saints.jpg" class="img-responsive"  alt="Image"></div>
+        <div class="teamLogo"><img src="nfl-logos/new_orleans_saints.jpg" class="img-responsive"  alt="Image"></div>
         <div class="teamName text-center">Print Team Name</div>
       </a>
     </div>
     <div class="col-sm-4">
       <div class="text-center middleText">
-        <h2>VS</h2>
+        <h2 class="midBlue">VS</h2>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="teamContainer">
-        <div class="teamLogo"><img src="nfl-logo/baltimore_ravens_logo.jpg" class="img-responsive" alt="Image"></div>
+      <a class="teamContainer">
+        <div class="teamLogo"><img src="nfl-logos/baltimore_ravens_logo.jpg" class="img-responsive" alt="Image"></div>
         <div class="teamName text-center">Print Team Name</div>
-      </div>
+      </a>
     </div>
   </div>
 </div><br>
@@ -120,21 +151,21 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <div class="teamContainer">
-        <div class="teamLogo"><img src="nfl-logo/arizona_cardinals_logo.jpg" class="img-responsive"  alt="Image"></div>
+      <a class="teamContainer">
+        <div class="teamLogo"><img src="nfl-logos/arizona_cardinals_logo.jpg" class="img-responsive"  alt="Image"></div>
         <div class="teamName text-center">Print Team Name</div>
-      </div>
+      </a>
     </div>
     <div class="col-sm-4">
       <div class="text-center middleText">
-        <h2>VS</h2>
+        <h2 class="midBlue">VS</h2>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="teamContainer">
-        <div class="teamLogo"><img src="nfl-logo/new_york_giants_logo.jpg" class="img-responsive" alt="Image"></div>
+      <a class="teamContainer">
+        <div class="teamLogo"><img src="nfl-logos/new_york_giants_logo.jpg" class="img-responsive" alt="Image"></div>
         <div class="teamName text-center">Print Team Name</div>
-      </div>
+      </a>
     </div>
   </div><br>
 
